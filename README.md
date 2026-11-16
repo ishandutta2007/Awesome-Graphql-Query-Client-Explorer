@@ -1,6 +1,6 @@
 # Awesome-Graphql-Query-Client-Explorer
 
-# Top GraphQL Query Client & Explorer Ecosystem
+## Top GraphQL Query Client & Explorer Ecosystem
 
 **Curated List of SaaS Platforms & Open-Source GitHub Projects**  
 *Focused on GraphQL IDE, Schema Visualization & Self-Hosted Query Clients*  
