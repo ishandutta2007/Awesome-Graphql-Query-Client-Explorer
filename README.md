@@ -67,7 +67,7 @@ The market dynamics exhibit a **hybrid structure**: while the overarching API ma
 
 ## 💻 Open-Source GitHub Projects
 
-| Project | Star Badge | Description |
+| Project | Stars_Badge | Description |
 |---------|------------|-------------|
 | **[Hoppscotch](https://github.com/hoppscotch/hoppscotch)** | [![Stars](https://img.shields.io/github/stars/hoppscotch/hoppscotch?style=social&color=white)](https://github.com/hoppscotch/hoppscotch/stargazers) | 🛸 **Open-source API development ecosystem with a built-in GraphQL client.** Self-hostable web and desktop client with syntax highlighting, auto-completion, collections, variables, headers, authentication, schema explorer, and documentation explorer. |
 | **[Bruno](https://github.com/usebruno/bruno)** | [![Stars](https://img.shields.io/github/stars/usebruno/bruno?style=social&color=white)](https://github.com/usebruno/bruno/stargazers) | 📁 **Fast, Git-friendly, open-source API client for REST and GraphQL.** Stores collections directly in folders on your filesystem using plain text (Bru markup language), enabling seamless version control, PR reviews, and offline-first GraphQL query execution. |
@@ -84,9 +84,9 @@ The market dynamics exhibit a **hybrid structure**: while the overarching API ma
 
 ### 📦 Archived / Legacy Projects
 
-| Project | Star Badge | Description |
+| Project | Stars_Badge | Description |
 |---------|------------|-------------|
-| **[GraphQL Playground](https://github.com/graphql/graphql-playground)** | [![Stars](https://img.shields.io/github/stars/graphql/graphql-playground?style=social&color=white)](https://github.com/graphql/graphql-playground/stargazers) | ⚠️ **Archived May 2026—not recommended for new projects.** Legacy GraphQL IDE with subscriptions, interactive docs, and collaboration. Star count: ~8.8k, but OpenSSF maintained score 0/10 and unmaintained. Plan migration to GraphiQL or Altair. |
+| **[GraphQL Playground](https://github.com/graphql/graphql-playground)** | [![Stars](https://img.shields.io/github/stars/graphql/graphql-playground?style=social&color=white)](https://github.com/graphql/graphql-playground/stargazers) | ⚠️ **Archived May 2026—not recommended for new projects.** Legacy GraphQL IDE with subscriptions, interactive docs, and collaboration. Stars_Count: ~8.8k, but OpenSSF maintained score 0/10 and unmaintained. Plan migration to GraphiQL or Altair. |
 
 ---
 
@@ -96,7 +96,7 @@ Contributions, suggestions, and corrections are warmly welcomed! 🌟
 
 1. **Fork the repository** to your GitHub account.
 2. **Add or update an entry** in `README.md` following the table formatting:
-   - Include project name, official URL, star badge link, concise feature overview, and proper protocol focus.
+   - Include project name, official URL, Stars_Badge link, concise feature overview, and proper protocol focus.
 3. **Ensure factual accuracy** with verified URLs and up-to-date star and pricing details.
 4. **Submit a pull request (PR)** with a clear explanation of why the tool should be listed.
 
@@ -129,3 +129,12 @@ If you find this curated GraphQL query client directory valuable:
 <div align="center">
   <b>Built with ❤️ for GraphQL developers, API engineers, and backend architects worldwide.</b>
 </div>
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Graphql-Query-Client-Explorer&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Graphql-Query-Client-Explorer_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Graphql-Query-Client-Explorer_growth.svg">
+  </picture>
+</a>
