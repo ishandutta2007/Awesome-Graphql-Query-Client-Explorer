@@ -15,17 +15,25 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-products)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
+
+The global GraphQL API management and client tooling sector is estimated at **$1.8 billion to $2.2 billion** (growing at ~25% CAGR as part of the broader $9B+ API management market). The market dynamics exhibit a **hybrid structure**: while the overarching API management plane is moderately concentrated around hyperscalers (AWS, Azure, Google Cloud/Apigee), the specialized GraphQL IDE, schema exploration, and federation client layer remains **fragmented and highly competitive**, driven by fast-moving developer-first platforms and strong open-source ecosystems.
+
 ## SaaS/Hosted Platforms
 
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[Apollo Studio](https://www.apollographql.com/docs/studio/)** | **Cloud service for building, validating, monitoring, and securing a data graph.** Includes schema registry, operation history, and Explorer for query execution. The community edition is available on GitHub . | Quote-only (enterprise); free tier available for small teams | Free tier available; no credit card required for basic usage |
-| **[Postman GraphQL Client](https://www.postman.com/)** | GraphQL query support within Postman's API platform. Write queries, manage variables, and integrate with collections and environments. | Free: **$0** (1 user); Solo: **$9/month**; Team: **$19/user/month** | **Free**: 1 user only, unlimited collection runs, no team workspace (March 2026 restructure) |
+| Product | Company Size / Valuation | Pricing (Starting) | Free Tier / Trial Limits | Description |
+|---------|--------------------------|-------------------|--------------------------|-------------|
+| **[Postman GraphQL Client](https://www.postman.com/)** | **$5.6B Valuation** (~$300M ARR) | **$9/user/month** (Solo, billed annually) | **Free forever**: Strictly 1 user (solo), unlimited collection runs, unlimited mock server calls (manual), no team workspaces | GraphQL query and schema inspection support within Postman's API platform. Write queries, manage variables, and integrate with collections and environments. |
+| **[Insomnia (Kong)](https://insomnia.rest/)** | **$2.0B Valuation** (~$100M+ ARR) | **$12/user/month** (Pro, billed annually) | **Free forever**: Local Scratchpad + Cloud sync, Git Sync projects capped at 3 users, 1,000 mock server requests/month | Streamlined desktop API client with native GraphQL query autocompletion, schema inspection, and environment variable support backed by Kong. |
+| **[Apollo Studio (GraphOS)](https://www.apollographql.com/docs/studio/)** | **$1.5B Valuation** (~$40M ARR) | **$5 per million requests** (Developer plan) | **Free forever**: Up to 3 users/org, rate-limited to 60 req/min on self-hosted routers, 1-day trace/metric retention | Cloud platform for building, querying, and securing data graphs. Features the Apollo Explorer IDE, schema registry, and operation collections. |
+| **[Hasura Cloud](https://hasura.io/)** | **$1.0B Valuation** (Series C) | **$5/month per active model** (DDN Base plan) | **Free forever**: Up to 3 projects, 3M API requests/month, 100MB-1GB data passthrough, community connectors | Cloud-managed GraphQL engine and data delivery network featuring built-in GraphiQL explorer console and instant schema exploration. |
+
 
 ## Open-Source GitHub Projects
 
