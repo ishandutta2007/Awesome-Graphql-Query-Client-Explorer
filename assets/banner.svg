@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background linear gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1e1035" />
+    </linearGradient>
+
+    <!-- GraphQL Pink & Cyan Accents -->
+    <linearGradient id="gqlPink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e535ab" />
+      <stop offset="100%" stop-color="#ff6ec7" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f3e8ff" />
+      <stop offset="100%" stop-color="#e535ab" />
+    </linearGradient>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Node Glow Filter -->
+    <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 19px;
+      fill: #cbd5e1;
+      letter-spacing: 0.2px;
+    }
+    .badge-text {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #ffffff;
+    }
+
+    /* Ambient Pulsing Animations for Background Dynamic Elements */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.25; transform: scale(1); }
+      50% { opacity: 0.55; transform: scale(1.08); }
+    }
+    @keyframes orbitFloat {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(3deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
+    }
+    @keyframes flowLine {
+      0% { stroke-dashoffset: 120; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes nodeBlink {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+
+    .ambient-glow-1 {
+      animation: pulseGlow 6s ease-in-out infinite;
+      transform-origin: 1050px 180px;
+    }
+    .ambient-glow-2 {
+      animation: pulseGlow 8s ease-in-out infinite 2s;
+      transform-origin: 150px 80px;
+    }
+    .dynamic-network {
+      animation: orbitFloat 7s ease-in-out infinite;
+      transform-origin: 1020px 180px;
+    }
+    .pulse-line {
+      stroke-dasharray: 8 6;
+      animation: flowLine 12s linear infinite;
+    }
+    .dynamic-node-1 { animation: nodeBlink 3s ease-in-out infinite; }
+    .dynamic-node-2 { animation: nodeBlink 4s ease-in-out infinite 1s; }
+    .dynamic-node-3 { animation: nodeBlink 3.5s ease-in-out infinite 0.5s; }
+    .dynamic-node-4 { animation: nodeBlink 5s ease-in-out infinite 1.5s; }
+  </style>
+
+  <!-- Deep Gradient Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Subtle Blueprint Tech Grid in Background -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="120" y1="0" x2="120" y2="360" />
+    <line x1="240" y1="0" x2="240" y2="360" />
+    <line x1="360" y1="0" x2="360" y2="360" />
+    <line x1="480" y1="0" x2="480" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="720" y1="0" x2="720" y2="360" />
+    <line x1="840" y1="0" x2="840" y2="360" />
+    <line x1="960" y1="0" x2="960" y2="360" />
+    <line x1="1080" y1="0" x2="1080" y2="360" />
+  </g>
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <circle class="ambient-glow-1" cx="1040" cy="180" r="140" fill="#e535ab" filter="url(#nodeGlow)" />
+  <circle class="ambient-glow-2" cx="120" cy="80" r="110" fill="#00f2fe" filter="url(#nodeGlow)" />
+
+  <!-- Dynamic Animated Graph Structure (GraphQL Schema/Ast Network placed on right edge) -->
+  <g class="dynamic-network" opacity="0.85">
+    <!-- Outer Hexagon Connections -->
+    <path class="pulse-line" d="M1020 80 L1130 140 L1130 240 L1020 300 L910 240 L910 140 Z" fill="none" stroke="#e535ab" stroke-width="2.2" opacity="0.6" />
+    
+    <!-- Cross Interconnections (GraphQL Triangle & Cross) -->
+    <line x1="1020" y1="80" x2="1020" y2="300" stroke="#4facfe" stroke-width="1.8" stroke-dasharray="5 5" opacity="0.5" />
+    <line x1="910" y1="140" x2="1130" y2="240" stroke="#4facfe" stroke-width="1.8" stroke-dasharray="5 5" opacity="0.5" />
+    <line x1="910" y1="240" x2="1130" y2="140" stroke="#4facfe" stroke-width="1.8" stroke-dasharray="5 5" opacity="0.5" />
+
+    <!-- Center Hub -->
+    <circle cx="1020" cy="190" r="18" fill="#e535ab" filter="url(#glow)" />
+    <circle cx="1020" cy="190" r="8" fill="#ffffff" />
+
+    <!-- Satellite Nodes with dynamic blinking -->
+    <circle class="dynamic-node-1" cx="1020" cy="80" r="9" fill="#00f2fe" />
+    <circle class="dynamic-node-2" cx="1130" cy="140" r="8" fill="#ff6ec7" />
+    <circle class="dynamic-node-3" cx="1130" cy="240" r="9" fill="#00f2fe" />
+    <circle class="dynamic-node-4" cx="1020" cy="300" r="8" fill="#ff6ec7" />
+    <circle class="dynamic-node-1" cx="910" cy="240" r="9" fill="#00f2fe" />
+    <circle class="dynamic-node-2" cx="910" cy="140" r="8" fill="#ff6ec7" />
+  </g>
+
+  <!-- Foreground Content (Clear, crisp, unobscured) -->
+  <g transform="translate(60, 0)">
+    <!-- Category Pill / Badge -->
+    <g transform="translate(0, 52)">
+      <rect width="250" height="30" rx="15" fill="#1e293b" stroke="#e535ab" stroke-width="1.2" />
+      <circle cx="16" cy="15" r="5" fill="#e535ab" />
+      <text x="32" y="20" class="badge-text" fill="#f8fafc">GRAPHQL ECOSYSTEM 2026</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="132" class="title-text" fill="url(#textGrad)">Awesome GraphQL</text>
+    <text x="0" y="180" class="title-text" fill="#38bdf8">Query Client &amp; Explorer</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="224" class="subtitle-text">Curated list of SaaS IDEs, schema visualizers, and self-hosted GraphQL explorers.</text>
+
+    <!-- Feature Tags / Pills -->
+    <g transform="translate(0, 262)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="130" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="65" y="20.5" class="badge-text" text-anchor="middle" fill="#94a3b8">⚡ GraphQL IDE</text>
+      </g>
+
+      <!-- Pill 2 -->
+      <g transform="translate(142, 0)">
+        <rect width="170" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="85" y="20.5" class="badge-text" text-anchor="middle" fill="#94a3b8">🔍 Schema Voyager</text>
+      </g>
+
+      <!-- Pill 3 -->
+      <g transform="translate(324, 0)">
+        <rect width="150" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="75" y="20.5" class="badge-text" text-anchor="middle" fill="#94a3b8">🛠️ Open Source</text>
+      </g>
+
+      <!-- Pill 4 -->
+      <g transform="translate(486, 0)">
+        <rect width="130" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="65" y="20.5" class="badge-text" text-anchor="middle" fill="#94a3b8">☁️ Cloud SaaS</text>
+      </g>
+    </g>
+  </g>
+</svg>
